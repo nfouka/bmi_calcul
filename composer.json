@@ -1,0 +1,13 @@
+{
+    "name": "drupal8/bmi",
+    "description": "BMI module for drupal8",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nadir Fouka",
+            "email": "nadir.fouka@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
