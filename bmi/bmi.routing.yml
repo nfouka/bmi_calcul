@@ -1,0 +1,51 @@
+hello.content:
+  path: '/bmi/hello'
+  defaults:
+    _controller: '\Drupal\bmi\Controller\DefaultController::content'
+    _title: 'Simple module for Drupal 8 / Symfony2 '
+  requirements:
+    _permission: 'access content'
+    
+    
+bmi.ajax.content:
+  path: '/bmi/ajax'
+  defaults:
+    _controller: '\Drupal\bmi\Controller\DefaultController::ajax'
+    _title: 'Ajax ...  '
+  requirements:
+    _permission: 'access content'    
+    
+bmi.default_controller_hello:
+  path: '/bmi/calculate'
+  defaults:
+    _controller: '\Drupal\bmi\Controller\DefaultController::bmi'
+    _title: 'BMI'
+  requirements:
+    _permission: 'access content'    
+    
+bmi.settings_form:
+  path: '/admin/config/bmi/settings'
+  defaults:
+    _form: '\Drupal\bmi\Form\SettingsForm'
+    _title: 'SettingsForm'
+  requirements:
+    _permission: 'access administration pages'
+
+
+bmi.default_form_settings_bim_form:
+  path: '/admin/config/bmi/defaultsettingsbim'
+  defaults:
+    _form: '\Drupal\bmi\Form\DefaultFormSettingsBimForm'
+    _title: 'DefaultFormSettingsBimForm'
+  requirements:
+    _permission: 'access administration pages'
+
+
+bmi.default_bmi_view_form:
+  path: '/bmi/defaultbmiview'
+  defaults:
+    _form: '\Drupal\bmi\Form\DefaultBmiViewForm'
+    _title: 'Body mass index Calculate'
+  requirements:
+     _permission: 'access content'
+

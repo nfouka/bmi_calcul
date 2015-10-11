@@ -1,0 +1,13 @@
+
+<?php
+
+  function bmi_theme() {
+    $theme['index_page'] = [
+      'variables' => ['name' => NULL , 'all' => NULL  , 'result' => NULL , 'form'=> NULL ],
+      'template' => 'index'
+    ];
+
+    return $theme;
+  }
+
+  ?>

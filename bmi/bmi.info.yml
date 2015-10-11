@@ -1,0 +1,6 @@
+name: bmi_calculate
+description: module for calculate bmi  
+package: CNRS
+type: module
+version: 8.0.0-rc1
+core: 8.x

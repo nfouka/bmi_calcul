@@ -1,0 +1,7 @@
+hello.content:
+  path: '/bmi/hello'
+  defaults:
+    _controller: '\Drupal\hello_world\Controller\DefaultController::content'
+    _title: 'Simple module for Drupal 8 Symfony2 '
+  requirements:
+    _permission: 'access content'
