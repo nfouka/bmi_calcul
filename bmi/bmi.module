@@ -9,5 +9,25 @@
 
     return $theme;
   }
+  /**
+ * Implements hook_help().
+ */
+function bmi_help($route_name, Drupal\Core\Routing\RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.bmi':
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' ."L'indice de masse corporelle (IMC, en anglais Body Mass Index, BMI) est une grandeur qui permet d’estimer la corpulence d’une personne. Elle a été inventée par Adolphe Quetelet, scientifique belge fondateur de la statistique moderne — cet indice est aussi appelé indice de Quetelet.
 
+Cet indice se calcule en fonction de la taille et de la masse. Bien qu’il ait été conçu au départ pour les adultes de 18 à 65 ans, de nouveaux diagrammes de croissance ont vu le jour au cours des dernières décennies pour les enfants de 0 à 18 ans. Dans les deux cas, il constitue une indication et intervient dans le calcul de l’IMG". '</p>';
+      $output .= '<h3>' . t('Uses') . '</h3>';
+      $output .= '<dl>';
+      $output .= '<dt>' . t('Changing colors') . '</dt>';
+      $output .= '<dd><p>' . t('To change the color settings, select the <em>Settings</em> link for your theme on the <a href=":appearance">Configuration database settings</a> page. If the color picker does not appear then the theme is not compatible with the Color module.', array(':appearance' => \Drupal::url('bmi.default_form_settings_bim_form'))) . '</p>';
+      $output .= '<p>' . t('The Color module saves a modified copy of the theme\'s specified stylesheets in the files directory. If you make any manual changes to your theme\'s stylesheet, <em>you must save your color settings again, even if you haven\'t changed the colors</em>. This step is required because the module stylesheets in the files directory need to be recreated to reflect your changes.') . '</p></dd>';
+      $output .= '</dl>';
+      return $output;
+  }
+}
+  
+  
   ?>

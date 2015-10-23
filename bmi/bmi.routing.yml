@@ -1,5 +1,5 @@
 hello.content:
-  path: '/bmi/hello'
+  path: '/admin/config/bmi/defaultsettingsbim'
   defaults:
     _controller: '\Drupal\bmi\Controller\DefaultController::content'
     _title: 'Simple module for Drupal 8 / Symfony2 '

@@ -24,7 +24,7 @@ class DefaultController extends \Drupal\Core\Controller\ControllerBase  {
   public function content() {
     return array(
       '#type' => 'markup',
-      '#markup' => t('Hello, World!'),
+      '#markup' => t('Module configuation , Go to <a href="http://localhost/rc2/admin/config/bmi/defaultsettingsbim>Configuration</a>"'),
     );
   }
   
